@@ -4,13 +4,13 @@
 
 Nesse tutorial de git vamos aprender os principais comandos que são utilizados no git e como eles funcionam de uma forma prática. :books: 
 
-<img align="center" src="./imagens/gitwall.png" width="600" heidth="400">
+<img align="center" src="./imagens/gitwall.png" width="1000" height="500"></img>
 
 <br>
 
----
+
 ## Qual a diferença entre Git e Github ?:thinking:
-<progress value="5" max="100"></progress> 5%
+
 
 <br>
 
@@ -20,15 +20,17 @@ Nesse tutorial de git vamos aprender os principais comandos que são utilizados 
 
 * Já o **GitHub** funciona como o proprio video-game que recebe as informações do memory-card e guarda informações de forma remota.
 
-<br><br>
+<br>
 
-___
-# Iniciando um repositorio local
-<progress value="10" max="100"></progress> 10%
+
+## Iniciando um repositorio local
+
 
 <br>
 
-``git init``
+```
+git init
+```
 
 
 <br>
@@ -39,18 +41,18 @@ ___
 
 **Atenção** : para criar um repositorio com o git init você deve estar na mesma pasta onde os arquivos do projeto estão.
 
-<br><br>
-____
+<br>
 
 ## Clonar um repositorio já existente no Github
-___
 
-<progress value="15" max="100"></progress> 15%
+
 
 
 <br>
 
-``git clone caminho_para_o_repositório``
+```
+git clone caminho_para_o_repositório
+```
 
 <br>
 
@@ -72,19 +74,23 @@ ___
 
 Nesse exemplo a url para clonar o repositorio ficaria assim:
 
-``git clone https://github.com/DenilsonRabelo/API-Receitas.git``
+```
+git clone https://github.com/DenilsonRabelo/API-Receitas.git
+```
 
 ![git clone](./imagens/gitclone(1).gif)
 
-<br><br>
-
-___
-## Verificando o status do projeto
-<progress value="20" max="100"></progress> 20%
-___
 <br>
 
-``git status``
+
+## Verificando o status do projeto
+
+
+<br>
+
+```
+git status
+```
 
 <br>
 
@@ -117,12 +123,13 @@ ___
 <br>
 
 
-___
-## Comando de adicionar ao repositorio
-<progress value="25" max="100"></progress> 25%
-___
 
-``git add nomedoarquivo``
+## Comando de adicionar ao repositorio
+
+
+```
+git add nomedoarquivo
+```
 
 <br>
 
@@ -142,14 +149,15 @@ ___
   
 <br>
 
-___
+
 ## Realizando o primeiro commit
-<progress value="30" max="100"></progress> 30%
-___
+
 
 <br>
 
-``git commit -m "comentários das alterações"``
+```
+git commit -m "comentários das alterações"
+```
 
 <br>
 
@@ -173,15 +181,15 @@ ___
 
 <br>
 
-___
 
 ## Analisando logs dos commits
-___
-<progress value="40" max="100"></progress> 40%
+
 
 <br>
 
-``git log``
+```
+git log
+```
 
 <br>
 
@@ -196,15 +204,16 @@ ___
 
 <br>
 
-___
+
 
 ## Publicando o projeto no repositorio do git
-___
-<progress value="60" max="100"></progress> 60%
+
 
 <br>
 
-``git push origin HEAD``
+```
+git push origin HEAD
+```
 
 <br>
 
