@@ -22,6 +22,10 @@ Nesse tutorial de git vamos aprender os principais comandos que são utilizados 
 
 <br>
 
+![git clone](./imagens/gitdiferente.jpg)
+
+<br>
+
 ## Configuração inicial do seu Git :bulb:
 
 <br>
@@ -170,7 +174,7 @@ git add nomedoarquivo
 
 <br>
 
-![git status](./imagens/gitadd.gif)
+![git add](./imagens/gitadd.gif)
 
 <br>
 
@@ -194,7 +198,7 @@ git commit -m "comentários das alterações"
 
 <br>
 
-![git status](./imagens/gitcommit1.gif)
+![git commit](./imagens/gitcommit1.gif)
 
 <br>
 
@@ -211,7 +215,7 @@ git commit -m "comentários das alterações"
 <br>
 
 
-## Analisando logs dos commits
+## Analisando logs dos commits :page_with_curl:
 
 
 <br>
@@ -225,7 +229,7 @@ git log
 * Com o ``git log`` podemos ver todos os commits realizados dentro de um repositório.
 
 
-![git status](./imagens/gitlog.gif)
+![git log](./imagens/gitlog.gif)
 
 <br>
 
@@ -253,7 +257,7 @@ Date:   Tue Jan 25 18:28:12 2022 -0300
 
 
 
-## Publicando o projeto no repositório do Github
+## Publicando o projeto no repositório do Github :package:
 
 
 <br>
@@ -269,9 +273,151 @@ git push origin HEAD
 
 <br>
 
-![git status](./imagens/gitpush.gif)
+![git push](./imagens/gitpush.gif)
+
+![git memePush](./imagens/gitpushmeme.jpeg)
 
 <br>
+
+
+# Entendendo o que é uma branch :card_index_dividers:
+
+* Imagine que você deseje fazer uma correção ou até mesmo uma modificação no seu código, seria muito descuidado implementar essas alterações diretas no código principal pois poderá ocorrer diversos erros ao longo do processo.
+
+* Agora imagine você esta trabalhando com uma equipe que utiliza o mesmo código no projeto e além disso varias pessoas modificam esse código diversas vezes, você concorda comigo que esse código vai ficar uma bagunça não é mesmo? ou até mesmo gerar conflitos no código.
+
+
+* **Mas então o que fazemos para solucionar esse problema ?**
+
+* Utilizamos as famosas branchs, as branch funcionam como ramificações do projeto principal. Quando criamos uma branch fazemos a cópia de todos os arquivos para uma nova seção dentro do próprio projeto, ou seja, se modificarmos alguma coisa em uma branch o código principal não será afetado até você mandar o código da branch para o projeto principal.
+
+<br><br>
+
+![git branch](./imagens/branchgit.png)
+
+
+<br><br>
+
+**Observação**: A branch principal do nosso projeto na maioria das vezes é chamado de **main** ou de **master**
+
+<br><br>
+
+# Como criar uma branch :triangular_ruler:
+
+<br>
+
+```
+git branch nomedabranch
+```
+
+<br>
+
+* Com o ``git branch nomedabranch`` você cria uma nova branch dentro do projeto.
+
+<br><br>
+
+# Mas como ir para a branch criada ?:magnet:
+
+<br>
+
+```
+git checkout nomedabranch
+```
+
+<br>
+
+* Com o ``git checkout nomedabranch`` você vai para a branch criada.
+
+<br>
+
+* Outra forma é utilizar o ``git switch nomedabranch``.
+
+<br>
+
+:monocle_face: **Observação**: Com ``git switch -c nomededabranch`` caso você não tenha a branch com o nome especificado além de criar a branch esse comando também já redireciona você para a branch.
+
+<br><br>
+
+# Comandos brench que facilitam :toolbox:
+
+<br>
+
+```
+git branch
+```
+
+<br>
+
+* Lista todas as branchs que estão no seu computador(Local).
+
+<br>
+
+```
+git branch -a
+```
+
+<br>
+
+* Lista todas as branchs que estão no repósitorio remoto(Github).
+
+<br><br>
+
+# Apagando uma branch :put_litter_in_its_place:
+
+<br>
+
+```
+git branch -d nome-da-branch
+git branch -D nome-da-branch
+```
+
+<br>
+
+* O comando que usa o **-d** apaga a branch caso você já tiver feito merge ou enviado as alterações para seu repositório remoto.
+
+<br>
+
+* O comando que utiliza **-D** ignora qualquer estado da sua branch e força a remoção.
+
+<br>
+
+:monocle_face: **Observação**: É recomendado a utilização do ```git branch -d nome-da-branch```.
+
+<br><br>
+
+
+# Merge das branchs :heavy_check_mark:
+
+<br>
+
+* Vamos supor que você criou sua branch e fez as modificações necessárias e agora quer colocar essas modificações no código principal, o que fazer ?
+
+<br>
+
+* Em primeiro lugar você deve dar um ``git switch`` para a branch principal do seu projeto ou para a branch que você deseja colocar as alterações.
+
+<br>
+
+
+
+<br>
+
+* Estando na brench que você deseja colocar o código alterado basta executar:
+
+```
+git merge nomedabranch
+```
+
+* Para jogar as alterações feitas no ``nomedabranch`` para a branch que você está.
+
+<br>
+
+* E pronto você realizou seu primeiro merge !
+
+<br>
+
+![git mergememe](./imagens/gitmergememe.gif)
+
 
 
 
